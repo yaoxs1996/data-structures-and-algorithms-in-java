@@ -18,7 +18,7 @@ public class SinglyLinkedList<E>
         {
             return next;
         }
-        public setNext(Node<E> n)
+        public void setNext(Node<E> n)
         {
             next = n;
         }
@@ -55,6 +55,7 @@ public class SinglyLinkedList<E>
         }
         return tail.getElement();
     }
+    //不带头结点
     //头插法
     public void addFirst(E e)
     {
@@ -95,5 +96,20 @@ public class SinglyLinkedList<E>
             tail = null;
         }
         return answer;
+    }
+    //打印结点
+    public void printNode()
+    {
+        if(isEmpty())
+        {
+            System.out.println("List is Empty!");
+            return;
+        }
+        Node<E> temp = head;
+        while(temp.getNext() != null)
+        {
+            System.out.print(temp.getElement());
+            temp = temp.getNext();
+        }
     }
 }
