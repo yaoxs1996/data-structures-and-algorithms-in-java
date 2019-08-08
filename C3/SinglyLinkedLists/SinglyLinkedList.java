@@ -50,6 +50,50 @@ public class SinglyLinkedList<E>
     public E last()
     {
         if(isEmpty())
+        {
+            return null;
+        }
+        return tail.getElement();
     }
+    //头插法
+    public void addFirst(E e)
+    {
+        head = new Node<>(e, head);     //创建一个新的结点并连接
+        if(size == 0)
+        {
+            tail = head;
+        }
+        size++;
+    }
+    //尾插法
+    public void addLast(E e)
+    {
+        Node<E> newest = new Node<>(e, null);
+        if(isEmpty())
+        {
+            head = newest;
+        }
+        else
+        {
+            tail.setNext(newest);
+        }
+        tail = newest;
+        size++;
+    }
+    //删除结点并返回第一个结点
+    public E removeFirst()
+    {
+        if(isEmpty())
+        {
+            return null;
+        }
+        E answer = head.getElement();
+        head = head.getNext();
+        size--;
+        if(size == 0)
+        {
+            tail = null;
+        }
+        return answer;
     }
 }
