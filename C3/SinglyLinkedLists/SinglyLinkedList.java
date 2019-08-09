@@ -81,7 +81,7 @@ public class SinglyLinkedList<E>
         tail = newest;
         size++;
     }
-    //删除结点并返回第一个结点
+    //删除第一个结点并返回该结点
     public E removeFirst()
     {
         if(isEmpty())
@@ -109,7 +109,9 @@ public class SinglyLinkedList<E>
         while(temp.getNext() != null)
         {
             System.out.print(temp.getElement());
+            System.out.print(" ");
             temp = temp.getNext();
         }
+        System.out.print(temp.getElement());        //打印最后一个结点
     }
 }
