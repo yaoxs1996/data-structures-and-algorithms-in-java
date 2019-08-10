@@ -20,5 +20,13 @@ public class Test
 
         System.out.println("移除的第一个元素为：" + sList.removeFirst());
         sList.printNode();
+
+        /*判等 */
+        SinglyLinkedList<Integer> sList_2 = new SinglyLinkedList<>();
+        sList_2.addLast(3);
+        sList_2.addLast(2);
+        sList_2.addLast(1);
+
+        System.out.println("\n两个链表是否相等：" + sList.equals(sList_2));
     }
 }
