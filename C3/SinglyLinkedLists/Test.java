@@ -1,6 +1,7 @@
 public class Test
 {
-    public static void main(String[] args)
+    /* 注意，要抛出异常！或者使用try...catch */
+    public static void main(String[] args) throws Exception     
     {
         //注意类型参数只能代表引用型类型
         SinglyLinkedList<Integer> sList = new SinglyLinkedList<>();
@@ -28,5 +29,10 @@ public class Test
         sList_2.addLast(1);
 
         System.out.println("\n两个链表是否相等：" + sList.equals(sList_2));
+
+        /*拷贝 */
+        SinglyLinkedList<Integer> sList_3 = sList.clone();
+        System.out.println("\n拷贝后的链表：");
+        sList_3.printNode();
     }
 }
