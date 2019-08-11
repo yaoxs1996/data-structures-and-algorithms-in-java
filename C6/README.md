@@ -49,8 +49,30 @@ Java在`java.util.Queue`中提供了接口。
 
 ### 基于单链表的队列实现
 
+[链表队列](LinkedQueue)。
+
 ### 循环队列
 
 实现在[循环队列](LinkedCircularQueue)下。  
 使用循环队列解决[约瑟夫环问题](LinkedCircularQueue/Josephus.java)。
+
+## 双端队列
+
+支持队首和队尾的插入与删除。
+
+### 双端队列ADT
+
+更新方法：
+
+* `addFirst(e)`
+* `addLast(e)`
+* `removeFirst()`
+* `removeLast()`
+
+访问方法：
+
+* `first()`
+* `last()`
+* `size()`
+* `isEmpty()`
 
