@@ -49,3 +49,8 @@ Java在`java.util.Queue`中提供了接口。
 
 ### 基于单链表的队列实现
 
+### 循环队列
+
+实现在[循环队列](LinkedCircularQueue)下。  
+使用循环队列解决[约瑟夫环问题](LinkedCircularQueue/Josephus.java)。
+
