@@ -25,3 +25,24 @@ java.util.Stack中有Java内建的栈，但是不推荐使用。使用示例在J
 ### 匹配括号和HTML标签
 
 代码实现在目录[Matching](Matching)下。  
+
+## 队列
+
+### 队列ADT
+
+两种更新方法：
+
+* `enqueue(e)`：将元素e增加到队尾。
+* `dequeue()`：从队列中移除并返回第一个元素。
+
+访问方法：
+
+* `first()`
+* `size()`
+* `isEmpty()`
+
+Java在`java.util.Queue`中提供了接口。
+
+### 基于数组的队列实现
+
+使用循环数组实现队列。实现代码在[ArrayQueue](ArrayQueue)目录下。
