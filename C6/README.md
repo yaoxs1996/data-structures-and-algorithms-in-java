@@ -46,3 +46,6 @@ Java在`java.util.Queue`中提供了接口。
 ### 基于数组的队列实现
 
 使用循环数组实现队列。实现代码在[ArrayQueue](ArrayQueue)目录下。
+
+### 基于单链表的队列实现
+
