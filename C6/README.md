@@ -76,3 +76,13 @@ Java在`java.util.Queue`中提供了接口。
 * `size()`
 * `isEmpty()`
 
+### 实现双端队列
+
+* 使用 循环数组实现双端队列
+  推荐使用ArrayQueue类
+* 使用双向链表实现双端队列
+
+### Java集合框架中的双端队列
+
+Java有接口`java.util.Deque`。  
+基于循环数组实现的`java.util.ArrayDeque`以及基于双向链表实现的`java.util.LinkedList`。
