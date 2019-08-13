@@ -34,3 +34,5 @@ Java的ArraList使用动态数组的算法技巧实现没有表明上的数目�
 
 在简单ArrayList的基础上实现[动态数组](DynamicArray)。
 
+### 动态数组平摊分析
+
