@@ -74,3 +74,20 @@ Positional List的更新方法：
 
 识别位置的最明显的方式就是结点引用。  
 实现在[LinkedPositionalList.java](PositionalList/LinkedPositionalList.java)。（未测试完成）
+
+## 迭代器
+
+迭代器是一种软件设计模式，抽象遍历元素序列的过程。  
+Java在`java.util.Iterator`接口中提供了两种方法：
+
+* `hasNext()`：在序列中是否至少有额外的一个元素
+* `next()`：返回序列中的下一个元素
+
+`java.util.Iterator`接口提供第三个方法，被部分迭代器支持：
+
+* `remove()`
+
+用于过滤元素集合的某些值（例如负值）。
+
+### Java的For-Each循环的迭代器接口
+
