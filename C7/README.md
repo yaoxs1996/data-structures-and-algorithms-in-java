@@ -69,3 +69,8 @@ Positional List的更新方法：
 
 定义Java接口[Position](PositionalList/Position.java)。  
 定义[PositionalList](PositionalList/PositionalList.java)。  
+
+### 双向链表实现
+
+识别位置的最明显的方式就是结点引用。  
+实现在[LinkedPositionalList.java](PositionalList/LinkedPositionalList.java)。（未测试完成）
